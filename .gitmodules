@@ -1,0 +1,3 @@
+[submodule "fair-api"]
+	path = fair-api
+	url = https://github.com/remyzane/fair-api.git
