@@ -6,7 +6,6 @@ from flask import session
 from fair import CView, Int, Str, Mail
 
 from example import app
-from .utility import SimpleAes
 
 log = logging.getLogger(__name__)
 
@@ -16,13 +15,10 @@ class Area(CView):
     def get(self, area_id):
         """Get the area information through it's id.
 
-        Get the area information through it's id.
-        Get the area information through it's id.
-        Get the area information through it's id.
-        Get the area information through it's id.
+        Detail info for api ...
 
         :plugin: json_p
-        :param Int * area_id: area id
+        :param Int * area_id: Area id's description ...
         :raise id_not_exist: Record does not exist.
         """
         if area_id > 100:
@@ -76,14 +72,13 @@ class UserInfo(CView):
 class UserForExternal(CView):
 
     def get(self, user_id):
-        """Get the user information through his/hers encrypted id.
+        """Get the user information through his/hers id.
 
-        :param Str user_id:
+        :param Int user_id:
         :raise id_invalid: Id is invalid.
         :raise id_not_exist: Record does not exist.
         """
-        user_id = SimpleAes.decrypt(user_id)
-        if not user_id:
+        if user_id < 1:
             return self.r('id_invalid', {'error': 'Unable to decrypt'})
         try:
             user_id = int(user_id)

@@ -37,7 +37,7 @@ def do_profile(params=None):
 
 # main
 if __name__ == '__main__':
-    from fair.utility import CustomizeHelpFormatter
+    from example.utility import CustomizeHelpFormatter
     usage = [
         ' ------------------------------ help ------------------------------',
         ' -h                            show help message',
