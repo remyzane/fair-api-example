@@ -2,8 +2,7 @@
 
 import os
 import logging
-from flask import session, request
-from peewee import CharField, Model
+from flask import session
 from fair import CView, Int, Str, Mail
 
 from example import app
@@ -115,16 +114,3 @@ class Session(CView):
         return self.r('success', {'key': session['user']})
 
 
-class User(Model):
-    username = CharField()
-
-
-class Performance(CView):
-
-    def get(self):
-        """The performance test
-        """
-        for index in range(1, 100):
-            id = index % 100 or 1
-            username = User.get(User.id == id).username
-        return self.r('success')
