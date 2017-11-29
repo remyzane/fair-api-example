@@ -3,7 +3,7 @@ import os
 import base64
 from Crypto.Cipher import AES
 
-from http_api.utility import load_yaml
+from fair.utility import load_yaml
 
 demo_key = b'p' * 16
 demo_iv = b'i' * 16

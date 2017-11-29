@@ -23,12 +23,12 @@ app:
 
   plugins:
     token:
-      class: http_api.plugin.token.Token
+      class: fair.plugin.token.Token
       key_provider: example.token.get_token_key
-      raise_class: http_api.response.JsonRaise
+      raise_class: fair.response.JsonRaise
 
     json_p:
-      class: http_api.plugin.jsonp.JsonP
+      class: fair.plugin.jsonp.JsonP
       callback_field_name: callback
 
   # View packages
@@ -37,10 +37,10 @@ app:
 
   # Parameter types
   parameter_types:
-    - http_api.parameter
+    - fair.parameter
 
   responses:
-    json: http_api.response.JsonRaise
+    json: fair.response.JsonRaise
     default: json
 
 

@@ -5,9 +5,9 @@ import sys
 from argparse import ArgumentParser
 
 sys.path.insert(0, 'fair-api')
-from http_api.utility import CustomizeHelpFormatter
-from http_api.assist.profile import run_profile
-from http_api.assist.pyshell import start_ipython
+from fair.utility import CustomizeHelpFormatter
+from fair.assist.profile import run_profile
+from fair.assist.pyshell import start_ipython
 
 import example
 

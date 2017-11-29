@@ -4,7 +4,7 @@ import os
 import logging
 from flask import session, request
 from peewee import CharField, Model
-from http_api import CView, Int, Str, Mail
+from fair import CView, Int, Str, Mail
 
 from example import app
 from .utility import SimpleAes
