@@ -4,13 +4,12 @@ import os
 import sys
 from argparse import ArgumentParser
 
-sys.path.insert(0, '..')
+sys.path.insert(0, 'fair-api')
 from http_api.utility import CustomizeHelpFormatter
 from http_api.assist.profile import run_profile
 from http_api.assist.pyshell import start_ipython
 
 import example
-from example import config, program_dir, workspace
 
 
 # test mode
@@ -31,7 +30,7 @@ def shell():
 # performance analysis
 def profile(params=None):
     var_env = {'run': run, 'params': params}
-    save_dir = os.path.join(workspace)
+    save_dir = os.path.join(example.workspace)
     run_profile('run(params)', var_env, save_dir)
 
 

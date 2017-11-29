@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 import os
 import base64
 from Crypto.Cipher import AES
@@ -8,7 +7,6 @@ from http_api.utility import load_yaml
 
 demo_key = b'p' * 16
 demo_iv = b'i' * 16
-program_dir = os.path.realpath(os.path.join(__file__, '..', '..'))
 
 
 def get_config(path, file_name):

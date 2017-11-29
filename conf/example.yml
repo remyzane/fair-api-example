@@ -19,12 +19,12 @@ databases:
 
 # saved in flask.current_app.config
 app:
-  workspace: work
+  workspace: var
 
   plugins:
     token:
       class: http_api.plugin.token.Token
-      key_provider: demo.token.get_token_key
+      key_provider: example.token.get_token_key
       raise_class: http_api.response.JsonRaise
 
     json_p:
@@ -33,7 +33,7 @@ app:
 
   # View packages
   view_packages:
-    - demo
+    - example
 
   # Parameter types
   parameter_types:
