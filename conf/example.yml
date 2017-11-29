@@ -22,11 +22,6 @@ app:
   workspace: var
 
   plugins:
-    token:
-      class: fair.plugin.token.Token
-      key_provider: example.token.get_token_key
-      raise_class: fair.response.JsonRaise
-
     json_p:
       class: fair.plugin.jsonp.JsonP
       callback_field_name: callback
@@ -45,8 +40,6 @@ app:
 
 
   web_ui:
-    access_keys:
-      - lJ9smp8llc339a5llc339a5lJ9smp8rTPdD9D53D
     uri: api
     doc_ui:
       uri: docs

@@ -37,7 +37,7 @@ class UserInfo(CView):
     def get(self, user_id):
         """Get the user information through his/hers id.
 
-        :plugin: json_p token
+        :plugin: json_p
         :param Int * user_id:
         :raise id_not_exist: Record does not exist.
         """
@@ -51,7 +51,6 @@ class UserInfo(CView):
     def post(self, username, nickname, password, email, address, mobile, zipcode):
         """User setting
 
-        :plugin: token
         :param Bool * username:
         :param Str nickname:
         :param Str * password:
