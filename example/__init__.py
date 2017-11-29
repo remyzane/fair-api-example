@@ -16,7 +16,7 @@ config = get_config(os.path.join(workspace, 'conf'), 'example.yml')
 set_logging(config['logging'], var_path)
 
 # create wsgi application
-app = application = Flask(__name__, static_folder='../www', static_url_path='/res',  template_folder='../')
+app = Flask(__name__)
 
 
 flask_config = config.get('flask') or {}
