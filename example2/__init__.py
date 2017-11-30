@@ -1,6 +1,6 @@
 import os
 from flask import Flask
-from fair.configure import fair_setup
+from fair.configure_old import fair_setup
 from fair.response import JsonRaise
 from fair.plugin.jsonp import JsonP
 
