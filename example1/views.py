@@ -1,5 +1,6 @@
 import fair
 
+
 @fair.route('/')
 def area(area_id):
     """ Get the area information through it's id.

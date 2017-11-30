@@ -7,4 +7,3 @@ fair.setup(app, cache_path=os.path.join(__file__, '..', '..', 'var'))
 
 with app.app_context():
     from . import views
-
