@@ -1,7 +1,13 @@
 import fair
+from . import app, air
 
 
-@fair.route('/')
+@app.route('/flask')
+def flask_route():
+    return 'This route build by flask self.'
+
+
+@air.route('/')
 def area(area_id):
     """ Get the area information through it's id.
 
