@@ -3,17 +3,17 @@ from fair import Fair
 app = Fair(__name__)
 
 
-@app.route('/', methods=['get'])
-def hello(name):
+@app.route('/', methods='get')
+def get(uid):
     """ Hello Fair-API
 
-    :param Str * name: you name ...
+    :param Int * uid: you id ...
     """
-    return 'Hello %s' % name
+    return 'Hello %s' % uid
 
 
-@app.route('/', endpoint='/_post', methods=['post'])
-def hello_post(name):
+@app.route('/', methods='post')
+def post(name):
     """ Hello Fair-API
 
     :param Str * name: you name ...
