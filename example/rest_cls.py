@@ -12,3 +12,7 @@ class Hello(yyy):
 
     def delete(self):
         pass
+
+
+if __name__ == '__main__':
+    app.run('0.0.0.0', 5000)

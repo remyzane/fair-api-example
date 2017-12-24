@@ -21,4 +21,5 @@ def hello_post(name):
     return 'Hello %s' % name
 
 
-app.run('0.0.0.0', 5000, use_reloader=True)
+if __name__ == '__main__':
+    app.run('0.0.0.0', 5000)
