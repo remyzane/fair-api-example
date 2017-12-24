@@ -5,7 +5,7 @@ import logging
 from flask import session
 from fair import CView, Int, Str, Mail
 
-from example2 import app
+from old import app
 
 log = logging.getLogger(__name__)
 

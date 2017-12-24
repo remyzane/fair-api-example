@@ -13,6 +13,7 @@ logger.setLevel('DEBUG')
 
 # set path for fair-api
 sys.path.insert(0, 'fair-api')
+sys.path.insert(0, 'example')
 
 # get example
 example_name = sys.argv[1]
